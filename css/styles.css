@@ -375,16 +375,12 @@ address {
   gap: 30px;
 }
 
-.customers-item {
-  width: 170px;
-  height: 92px;
-}
-
 .customers-link {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  width: 170px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
   color: #afb1b8;
@@ -393,17 +389,27 @@ address {
 .customers-link:hover,
 .customers-link:focus {
   color: var(--accent-color);
-  border: var(--accent-color);
+  border: 1px solid var(--accent-color);
 }
 
 .customers-icon {
   fill: currentColor;
 }
+
 /* footer */
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-left-side {
+  margin-right: 70px;
 }
 
 .footer-logo {
@@ -435,6 +441,39 @@ address {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--accent-color);
+}
+
+.footer-join-in {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--third-text-color);
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff1a;
+  color: var(--third-text-color);
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-socials-icon {
+  fill: currentColor;
 }
 /* portfolio */
 
@@ -472,11 +511,15 @@ address {
 .pagination-btn:focus {
   color: var(--third-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .pagination-btn.active {
   color: var(--third-text-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .gallery-list {
@@ -487,6 +530,12 @@ address {
 
 .gallery-item {
   width: calc((100% - 60px) / 3);
+}
+
+.gallery-item:hover,
+.gallery-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .gallery-project-name {
