@@ -157,7 +157,9 @@ address {
 }
 
 .header-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -170,6 +172,10 @@ address {
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+}
+
+.header-icon {
+  fill: currentColor;
 }
 
 /* hero */
@@ -243,6 +249,18 @@ address {
 
 .about-item {
   width: calc((100% - 90px) / 4);
+}
+
+.about-icons {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .about-title {
@@ -329,11 +347,57 @@ address {
 }
 
 .socials-link {
-  width: 44px;
-  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+}
+
+.socials-icon {
+  fill: currentColor;
+}
+
+/* customers */
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.customers-item {
+  width: 170px;
+  height: 92px;
+}
+
+.customers-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  color: var(--accent-color);
+  border: var(--accent-color);
+}
+
+.customers-icon {
+  fill: currentColor;
 }
 /* footer */
 .footer {
